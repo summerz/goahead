@@ -1,6 +1,6 @@
 {
   "name": "goahead",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A one-key 진행하죠: when Claude ends a turn with a question, a button and ⌥↩ send your configured reply.",
   "types": "./types/index.d.ts",
   "userConfig": {
