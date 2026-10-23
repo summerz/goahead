@@ -1,0 +1,9 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "goahead",
+  "owner": { "name": "summerz", "url": "https://github.com/summerz" },
+  "description": "Install goahead, a one-key approval when Claude ends a turn with a question.",
+  "plugins": [
+    { "name": "goahead", "source": "./", "description": "a one-key approval when Claude ends a turn with a question.", "license": "MIT", "keywords": ["approval","shortcut","prompt","button","korean"] }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "goahead",
+  "version": "0.1.0",
+  "description": "A one-key 진행하죠: when Claude ends a turn with a question, a button and ⌥↩ send your configured reply.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "reply": {
+      "type": "string",
+      "title": "Reply",
+      "description": "The text sent as your prompt.",
+      "default": "진행하죠."
+    },
+    "key": {
+      "type": "string",
+      "title": "Send key",
+      "description": "Sends the reply while a question is pending. Modifiers ctrl, alt (option), shift joined with +, then the key.",
+      "default": "alt+return"
+    },
+    "patterns": {
+      "type": "string",
+      "title": "Question patterns",
+      "description": "Case-insensitive regex alternation matched against the last paragraph of Claude's final message. An invalid regex falls back to the default.",
+      "default": "할까요|드릴까요|진행할까요|시작할까요|괜찮을까요|어떻게 할까요|shall I|should I|want me to|proceed\\?"
+    },
+    "requireQuestionMark": {
+      "type": "boolean",
+      "title": "Require question mark",
+      "description": "When on, only a message ending with ? or ？ counts as a question.",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "summerz",
+    "url": "https://github.com/summerz"
+  }
+}
