@@ -49,7 +49,7 @@ export const register: Register = (on, options) => {
       <Box borderStyle="round" borderColor="promptBorder" borderDimColor paddingX={1} gap={1}>
         <Button key="go" variant="primary" label={reply} hotkey="g" onPress={() => send($, reply)} />
         <Button key="hide" plain label="[hide]" hotkey="h" onPress={() => { pending = false }} />
-        <Text dimColor>{chordLabel(chord)} sends · h hides</Text>
+        <Text dimColor>{chordLabel(chord)} sends · click [hide] or just type</Text>
       </Box>
     )
     return r == null ? band : <Box flexDirection="column">{r as RenderElement}{band}</Box>

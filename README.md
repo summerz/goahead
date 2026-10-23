@@ -27,7 +27,7 @@ Answer `y` to add the marketplace, then pick a scope.
 ## Features
 
 - Detects a question when the last paragraph of Claude's final message matches `patterns`. `requireQuestionMark` restricts it to messages ending with `?`.
-- A band above the prompt shows a `[진행하죠.]` button (hotkey `g`) and `[hide]` (hotkey `h`).
+- A band above the prompt shows a `[진행하죠.]` button and `[hide]`. The `g` and `h` hotkeys work once the band has focus (a click, or ctrl+x tab); from the prompt box use the key below.
 - The `key` chord (default `alt+return`) sends the configured `reply`.
 - Subagent turns are ignored.
 
